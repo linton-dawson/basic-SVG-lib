@@ -9,7 +9,7 @@ SVG Library in C for creating and saving svg files.
 - Circle
 - Ellipse
 
-and text.
+  and text.
 
 ## Built with help from Chris Webb's article
 http://www.code-in-c.com/writing-svg-library-c/
