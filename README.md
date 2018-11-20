@@ -4,7 +4,7 @@ SVG Library in C for creating and saving svg files.
 
 ## Also contains inbuilt functions to draw given basic shapes :-
 
- -Line
+-Line
 - Rectangle
 - Circle
 -Ellipse
