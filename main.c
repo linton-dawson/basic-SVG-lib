@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<time.h>
+#include<string.h>
 
 #include"svg.h"
 
@@ -77,6 +78,9 @@ void customalientext(void)
 {
     svg* psvg;
     psvg = svg_create(512, 768);
+    char customtxt[200];
+    printf("Enter any text:- ");
+    fgets(customtxt,200,stdin);
 
     if(psvg == NULL)
     {
@@ -96,7 +100,7 @@ void customalientext(void)
             svg_rectangle(psvg, 1, 1, x, y, "white", "white", 0, 0, 0);
         }
 
-        svg_text(psvg, 96, 712, "sans-serif", 32, "#FFFFFF", "#FFFFFF", "Custom Alien Text");
+        svg_text(psvg, 96, 712, "sans-serif", 32, "#FFFFFF", "#FFFFFF", customtxt);
 
         svg_circle(psvg, "silver", 2, "rgba(0,0,0,0)", 28, 256, 384);
 
